@@ -4,7 +4,11 @@
   border: 1px solid #f3f3f3;
   border-radius: $card-radius;
   box-sizing: border-box;
-  transition: transform 0.3s;
+  transition: transform $transition-time;
+
+  &:hover {
+    transform: scale(1.2);
+  }
 
   &__item {
     display: flex;
@@ -36,7 +40,7 @@
     line-height: 18px;
     color: $main-color;
     margin-bottom: 4px;
-    transition: 0.3s;
+    transition: color $transition-time;
     &:hover .card__title {
       color: #34568b;
     }
@@ -114,15 +118,11 @@
     background-color: $button-color;
     text-decoration: none;
     color: #fff;
-    transition: all 0.3s;
+    transition: all $transition-time;
     &:hover {
-      padding: 11px 69px;
-      box-sizing: border-box;
-      border-width: 1px;
       background-color: #fff;
       border-color: $button-color;
       color: $button-color;
-      transform: scale(1.2);
     }
   }
 }
