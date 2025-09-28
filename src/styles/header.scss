@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  padding: 0 50px;
+  padding: 0 $catalog-padding-horizontal;
   display: flex;
   position: relative;
   align-items: center;
@@ -43,7 +43,7 @@
 }
 
 .nav__link:hover {
-  color: var(--blue);
+  color: $nav-hover-color;
 }
 
 .nav__link.is-active {
@@ -56,7 +56,7 @@
   font-size: 12px;
   font-weight: 500;
   white-space: nowrap;
-  color: var(--blue);
+  color: $nav-hover-color;
 }
 
 .nav__link.is-active::after {
@@ -69,10 +69,10 @@
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  background-color: var(--blue);
+  background-color: $nav-hover-color;
 }
 
-.header__logo_link {
+.header__logo-link {
   display: flex;
   height: 40px;
   width: 40px;

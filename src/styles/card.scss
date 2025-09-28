@@ -6,8 +6,24 @@
   box-sizing: border-box;
   transition: transform $transition-time;
 
+  &__title {
+    width: 100%;
+    margin-top: 40px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    color: $main-color;
+    margin-bottom: 4px;
+    transition: color $transition-time;
+  }
+
   &:hover {
     transform: scale(1.2);
+
+    .card__title {
+      color: $title-hover-color;
+    }
   }
 
   &__item {
@@ -29,21 +45,6 @@
     display: block;
     object-fit: contain;
     margin: 0 auto;
-  }
-
-  &__title {
-    width: 100%;
-    margin-top: 40px;
-    font-family: inherit;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 18px;
-    color: $main-color;
-    margin-bottom: 4px;
-    transition: color $transition-time;
-    &:hover .card__title {
-      color: #34568b;
-    }
   }
 
   &__description {
